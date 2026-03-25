@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+
+    <page>
+        <title>Central AC</title>
+        <slug>central-ac</slug>
+        <parent>residential/air-conditioning</parent>
+        <content><![CDATA[
+<div class="first-content">
+First Content
+</div>
+<div class="remaining-content">
+Remaining Content
+</div>
+        ]]></content>
+    </page>
+
+</pages>

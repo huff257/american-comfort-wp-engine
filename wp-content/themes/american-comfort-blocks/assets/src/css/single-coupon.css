@@ -1,0 +1,234 @@
+section.single-coupon {
+  padding: 4em 0;
+  padding-bottom: 1em;
+}
+@media (max-width: 800px) {
+  section.single-coupon {
+    padding-bottom: 2em;
+  }
+}
+section.single-coupon + .single-coupon {
+  padding: 1em 0;
+}
+@media (max-width: 800px) {
+  section.single-coupon + .single-coupon {
+    padding: 2em 0;
+  }
+}
+section.single-coupon .coupon-section-title {
+  font-size: 2.5em;
+  padding: 0.5em 0;
+  padding-top: 0;
+  line-height: 1;
+  color: var(--wp--preset--color--custom-white);
+}
+@media (max-width: 1000px) {
+  section.single-coupon .coupon-section-title {
+    font-size: 2em;
+  }
+}
+section.single-coupon .coupon {
+  position: relative;
+  padding: 3em 2em;
+  background-color: var(--wp--preset--color--custom-primary);
+  border: 4px dashed var(--wp--preset--color--custom-white);
+  border-radius: 1em;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  section.single-coupon .coupon {
+    padding: 3em 2em;
+  }
+}
+section.single-coupon .coupon-columns {
+  position: relative;
+  align-items: center !important;
+}
+@media (max-width: 1200px) {
+  section.single-coupon .coupon-columns {
+    display: block;
+  }
+}
+section.single-coupon .icon-column {
+  position: relative;
+  padding: 1em;
+  min-height: 22em;
+}
+@media (max-width: 1200px) {
+  section.single-coupon .icon-column {
+    display: none;
+  }
+}
+section.single-coupon .icon-column::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 20em;
+  height: auto;
+  aspect-ratio: 1/1;
+  max-width: calc(100% - 2em);
+  border-radius: 2em;
+  background-color: var(--wp--preset--color--custom-hover-red);
+  transform: translate(-50%, -50%);
+}
+section.single-coupon .icon-column::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 20em;
+  height: auto;
+  aspect-ratio: 1/1;
+  max-width: calc(100% - 2em);
+  background-image: url("/wp-content/themes/american-comfort-blocks/assets/svgs/ac-piggy-bank.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+section.single-coupon .coupon-content {
+  position: relative;
+  padding: 0 3em;
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  section.single-coupon .coupon-content {
+    padding: 0;
+    padding-top: 2em;
+    padding-left: 3em;
+  }
+}
+@media (max-width: 800px) {
+  section.single-coupon .coupon-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  section.single-coupon .coupon-content::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+    width: 6em;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--wp--preset--color--custom-hover-red);
+    transform: translate(-4.5em, -50%);
+  }
+}
+@media (max-width: 800px) {
+  section.single-coupon .coupon-content::before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
+@media (max-width: 1200px) {
+  section.single-coupon .coupon-content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    width: 6em;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-image: url("/wp-content/themes/american-comfort-blocks/assets/svgs/ac-piggy-bank.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-4.5em, -50%);
+  }
+}
+@media (max-width: 800px) {
+  section.single-coupon .coupon-content::after {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
+section.single-coupon .coupon-content p + p {
+  margin-top: 1.5rem;
+}
+section.single-coupon .coupon-content p + .coupon-btns {
+  margin-top: 2rem;
+}
+section.single-coupon .coupon-inner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+section.single-coupon .coupon-btn {
+  border-color: var(--wp--preset--color--custom-white);
+  transition: border-color 300ms ease;
+}
+section.single-coupon .coupon-btn a, section.single-coupon .coupon-btn div {
+  padding: 1em 3em;
+  width: 13em;
+  max-width: 100%;
+}
+section.single-coupon .coupon-btn a:hover, section.single-coupon .coupon-btn a:focus, section.single-coupon .coupon-btn div:hover, section.single-coupon .coupon-btn div:focus {
+  color: var(--wp--preset--color--custom-white);
+  border-color: var(--wp--preset--color--custom-primary-light);
+}
+section.single-coupon .coupon-title {
+  font-size: 1.29em;
+}
+section.single-coupon .details {
+  font-weight: 700;
+  text-decoration: underline;
+}
+section.single-coupon.single-coupon-post-page .coupon {
+  padding: 0;
+}
+section.single-coupon.single-coupon-post-page .coupon-columns {
+  flex-direction: row-reverse;
+  padding: 3em 2em;
+}
+section.single-coupon.single-coupon-post-page p, section.single-coupon.single-coupon-post-page h2 {
+  color: var(--wp--preset--color--custom-white) !important;
+}
+section.single-coupon.single-coupon-post-page p + .ac-btns-wrapper, section.single-coupon.single-coupon-post-page h2 + .ac-btns-wrapper {
+  margin-top: 1.5rem;
+}
+section.single-coupon.single-coupon-post-page .ac-phone-coupon-icon a {
+  position: relative;
+  padding-left: 3.5em;
+}
+section.single-coupon.single-coupon-post-page .ac-phone-coupon-icon a::before {
+  content: "";
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 0;
+  width: 1.8em;
+  height: 1.8em;
+  background-color: var(--wp--preset--color--custom-white);
+  display: block;
+  mask-image: url("/wp-content/themes/american-comfort-blocks/assets/svgs/ac-phone-icon.svg");
+  transform: translate(1.25em, -50%);
+}
+section.single-coupon.single-coupon-post-page .ac-btn a {
+  border-color: var(--wp--preset--color--custom-white);
+  border: solid 2px;
+}
+section.single-coupon.single-coupon-post-page .cta-bar {
+  position: relative;
+  z-index: 0;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+section.single-coupon.single-coupon-post-page + .single-testimonial {
+  margin-top: 4em;
+}
+section.single-coupon.single-coupon-post-page .wp-block-post-title + .wp-block-post-content {
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=single-coupon.css.map */

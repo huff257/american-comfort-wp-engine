@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+
+<title>American Comfort Import</title>
+<link>http://american-comfort.local</link>
+<description>Content update import</description>
+
+<wp:wxr_version>1.2</wp:wxr_version>
+
+<wp:base_site_url>http://american-comfort.local</wp:base_site_url>
+<wp:base_blog_url>http://american-comfort.local</wp:base_blog_url>
+
+
+<item>
+
+<title><![CDATA[Central AC]]></title>
+
+<link>
+http://american-comfort.local/residential/air-conditioning/central-ac/
+</link>
+
+<pubDate>Thu, 29 Jan 2026 17:56:34 +0000</pubDate>
+
+<dc:creator><![CDATA[amerciancomfort]]></dc:creator>
+
+<guid isPermaLink="false">
+http://american-comfort.local/?page_id=868
+</guid>
+
+<description><![CDATA[]]></description>
+
+<content:encoded><![CDATA[
+
+<div class="first-content">
+<p>This is updated content from scraper.</p>
+</div>
+
+<div class="remaining-content">
+<p>This is remaining content.</p>
+</div>
+
+]]></content:encoded>
+
+<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+
+<wp:post_id>868</wp:post_id>
+
+<wp:post_date><![CDATA[2026-01-29 17:56:34]]></wp:post_date>
+<wp:post_date_gmt><![CDATA[2026-01-29 17:56:34]]></wp:post_date_gmt>
+
+<wp:post_modified><![CDATA[2026-02-18 00:00:00]]></wp:post_modified>
+<wp:post_modified_gmt><![CDATA[2026-02-18 00:00:00]]></wp:post_modified_gmt>
+
+<wp:comment_status><![CDATA[open]]></wp:comment_status>
+
+<wp:ping_status><![CDATA[open]]></wp:ping_status>
+
+<wp:post_name><![CDATA[central-ac]]></wp:post_name>
+
+<wp:status><![CDATA[publish]]></wp:status>
+
+<wp:post_parent>863</wp:post_parent>
+
+<wp:menu_order>0</wp:menu_order>
+
+<wp:post_type><![CDATA[page]]></wp:post_type>
+
+<wp:post_password><![CDATA[]]></wp:post_password>
+
+<wp:is_sticky>0</wp:is_sticky>
+
+<wp:postmeta>
+<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+<wp:meta_value><![CDATA[default]]></wp:meta_value>
+</wp:postmeta>
+
+</item>
+
+
+</channel>
+</rss>

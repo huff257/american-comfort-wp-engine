@@ -1,0 +1,71 @@
+.tabs-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.tabs-header {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.tab-button {
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.tab-button.active {
+    border-bottom: 3px solid #007cba;
+    font-weight: 600;
+}
+
+.tab-button:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.tabs-body {
+    padding: 16px;
+}
+
+.tab-item {
+    padding: 0;
+    margin: 0;
+}
+
+.tab-item.snowflake::before {
+    content: '❄️';
+    margin-right: 8px;
+}
+
+.tab-item.flame::before {
+    content: '🔥';
+    margin-right: 8px;
+}
+
+.tab-item.air-quality::before {
+    content: '💨';
+    margin-right: 8px;
+}
+
+.tab-item.water-heater::before {
+    content: '💧';
+    margin-right: 8px;
+}
+
+.tab-item.commercial::before {
+    content: '🏢';
+    margin-right: 8px;
+}
+
+.tabs-body .tab-pane.inactive {
+    display: none;
+}
+
+.tabs-body .tab-pane.active {
+    display: block;
+}

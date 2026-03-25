@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "building-blocks-theme/location-search-form",
+  "title": "Location Search Form",
+  "category": "widgets",
+  "icon": "location",
+  "description": "A simple input that returns location information",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "editorScript": "file:./build/index.js",
+  "style": "file:./build/style-index.css"
+}

@@ -1,0 +1,25 @@
+{
+  "apiVersion": 3,
+  "name": "buildingblocks-block-theme/bb-slider",
+  "title": "Slider",
+  "category": "layout",
+  "icon": "images-alt2",
+  "description": "A simple slider container.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "viewScript": "tabs-block-frontend"
+}

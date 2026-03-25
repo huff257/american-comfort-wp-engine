@@ -1,0 +1,196 @@
+.ac-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2.5em;
+
+    @media (max-width: 850px) {
+        padding: 0 1.5em;
+    }
+
+    @media (max-width: 500px) {
+        padding: 0 1em;
+    }
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.2;
+  //-webkit-font-smoothing: antialiased;
+  font-family: "Roboto", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+    & + p {
+        margin-top: 1rem;
+    }
+
+    & + .bb-buttons-wrapper {
+      margin-top: 1rem;
+    }
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+h2 {
+    @media screen and (max-width: 500px) {
+     font-size: 2em;
+  }
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+ul {
+  margin: 0;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+.fade-element {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.fade-element.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-red {
+  a {
+    &:hover,
+    &:focus {
+      color: var(--wp--preset--color--custom-secondary) !important;
+      transition: 300ms ease;
+    }
+  }
+}
+
+.ac-btn {
+  > a,
+  > div
+  > button {
+    padding: 1em 1.8em;
+    transition: background-color 300ms ease, color 300ms ease;
+  }
+}
+
+.ac-btn-white {
+  a, > button {
+    background-color: var(--wp--preset--color--custom-white) !important;
+    font-size: 1.2em;
+    color: var(--wp--preset--color--custom-secondary) !important;
+    border: solid 2px !important;
+    border-color: var(--wp--preset--color--custom-white) !important;
+    font-weight: 700;
+
+    &:hover {
+      background-color: var(--wp--preset--color--custom-secondary) !important;
+      color: var(--wp--preset--color--custom-white) !important;
+    }
+  }
+}
+
+.ac-btn-transparent { 
+  a, > button {
+    font-size: 2em;
+    padding: 0.5em 1em;
+    border: none !important;
+    background-color: transparent !important;
+    color: var(--wp--preset--color--custom-white) !important;
+    font-weight: 700;
+  }
+}
+
+.ac-btn-red {
+  a, > button {
+      background-color: var(--wp--preset--color--custom-secondary) !important;
+
+    &:hover {
+      background-color: var(--wp--preset--color--custom-hover-red) !important;
+      color: var(--wp--preset--color--custom-white) !important;
+    }
+  }
+}
+
+.ac-btn-blue {
+  a, > button {
+      background-color: var(--wp--preset--color--custom-primary) !important;
+
+    &:hover {
+      background-color: var(--wp--preset--color--custom-hover-blue) !important;
+      color: var(--wp--preset--color--custom-white) !important;
+    }
+  }
+}
+
+.entry-content {
+  position: relative;
+  z-index: 1;
+}
+
+h1:where(.wp-block-heading).has-background, h2:where(.wp-block-heading).has-background, h3:where(.wp-block-heading).has-background, h4:where(.wp-block-heading).has-background, h5:where(.wp-block-heading).has-background, h6:where(.wp-block-heading).has-background {
+    padding: 0;
+}
+
+a {
+  &:not(.ac-btn a) {
+    text-decoration: none;
+    transition: 300ms ease;
+
+    &:hover {
+      color: var(--wp--preset--color--custom-primary-light);
+    }
+  }
+}

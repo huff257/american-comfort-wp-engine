@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "buildingblocks-block-theme/bb-advanced-block",
+  "title": "Advanced Block",
+  "category": "widgets",
+  "icon": "minus",
+  "description": "Block that allows for custom styles.",
+  "supports": { 
+    "html": false,
+    "color": {
+      "background": true
+    }
+  },
+  "attributes": {
+    "postId": { "type": "number" },
+    "variant": { "type": "string", "default": "default" },
+    "htmlTag": { "type": "string", "default": "div" },
+    "className": { "type": "string", "default": "" }
+  },
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css"
+}

@@ -1,0 +1,38 @@
+@use 'hero-video.scss';
+
+.ac-btn {
+  > a,
+  > div {
+    padding: 0.9em 1.75em;
+  }
+}
+
+.ac-dollar-icon::before {
+    content: '';
+    display: block;
+    mask-image: url(http://american-comfort.local/wp-content/themes/american-comfort-blocks/assets/svgs/ac-dollar-icon.svg);
+}
+
+.ac-phone-icon::before {
+    content: '';
+    display: block;
+    mask-image: url(http://american-comfort.local/wp-content/themes/american-comfort-blocks/assets/svgs/ac-phone-icon.svg);
+}
+
+/* When logged in, push header below admin bar */
+.primary-site-header {
+    top: 32px;
+}
+
+/* Mobile admin bar height */
+@media screen and (max-width: 782px) {
+    .primary-site-header {
+        top: 46px;
+    }
+}
+
+.edit-site-layout {
+    .primary-site-header {
+        position: relative;
+    }
+}

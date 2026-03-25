@@ -1,0 +1,289 @@
+.bb-content-and-sidebar {
+  --left-right-spacing: 2em;
+}
+@media (max-width: 900px) {
+  .bb-content-and-sidebar .ac-container {
+    padding: 0;
+  }
+}
+.bb-content-and-sidebar .main-wrapper {
+  display: grid;
+  grid-template-columns: calc(100% - 500px) 500px;
+  gap: 0;
+}
+@media (max-width: 1100px) {
+  .bb-content-and-sidebar .main-wrapper {
+    grid-template-columns: calc(100% - 400px) 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .bb-content-and-sidebar .main-wrapper {
+    grid-template-columns: calc(100% - 350px) 350px;
+  }
+}
+@media (max-width: 900px) {
+  .bb-content-and-sidebar .main-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
+}
+.bb-content-and-sidebar .big-phone {
+  font-size: 1.75em;
+  font-weight: 700;
+  color: var(--wp--preset--color--custom-primary-light);
+}
+.bb-content-and-sidebar .big-phone a {
+  color: var(--wp--preset--color--custom-primary-light);
+}
+.bb-content-and-sidebar .bb-main-content {
+  padding: 3em 0;
+  padding-right: 2em;
+}
+.bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h2 + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h3 + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) ul + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) h4 + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) figure + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) img + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) strong + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) a + div, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + h2, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + p, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + h3, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + ul, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + h4, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + figure, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + img, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + strong, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + a, .bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) div + div {
+  margin-top: 1.25rem;
+}
+.bb-content-and-sidebar .bb-main-content :not(.ac-btns-wrapper *) p + p {
+  margin-top: 1rem;
+}
+.bb-content-and-sidebar .bb-main-content li + li {
+  margin-top: 1rem;
+}
+.bb-content-and-sidebar .bb-main-content ul + ul {
+  margin-top: 1rem;
+}
+.bb-content-and-sidebar .bb-main-content ul {
+  padding-left: 3rem;
+}
+.bb-content-and-sidebar .bb-main-content ul li {
+  list-style-type: disc;
+}
+.bb-content-and-sidebar .bb-main-content ul li + li {
+  margin-top: 1rem;
+}
+.bb-content-and-sidebar .bb-main-content h2, .bb-content-and-sidebar .bb-main-content h3 {
+  color: var(--wp--preset--color--custom-primary);
+}
+@media (max-width: 900px) {
+  .bb-content-and-sidebar .bb-main-content {
+    padding: 3em 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .bb-content-and-sidebar .bb-main-content {
+    padding: 2em 1em;
+  }
+}
+.bb-content-and-sidebar .testimonial-wrapper {
+  padding: 3em var(--left-right-spacing);
+}
+@media (max-width: 900px) {
+  .bb-content-and-sidebar .testimonial-wrapper {
+    padding: 3em 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .bb-content-and-sidebar .testimonial-wrapper {
+    padding: 2em 1em;
+  }
+}
+.bb-content-and-sidebar .testiomonial-title {
+  display: block;
+  max-width: 330px;
+  margin: 0 auto;
+  font-size: 1.75em;
+  line-height: 1;
+}
+.bb-content-and-sidebar .testimonial {
+  position: relative;
+  display: block;
+  margin: 2em auto;
+  margin-bottom: 4em;
+  padding: 2em 4em;
+  padding-bottom: 3.5em;
+  max-width: 650px;
+  background-color: var(--wp--preset--color--custom-white);
+  border: 3px solid var(--wp--preset--color--custom-primary-light);
+  border-radius: 1.5em;
+}
+@media (max-width: 1000px) {
+  .bb-content-and-sidebar .testimonial {
+    padding: 2em 1em;
+    padding-bottom: 3.5em;
+  }
+}
+.bb-content-and-sidebar .testimonial::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  background-color: var(--wp--preset--color--custom-primary);
+  transform: translate(-50%, 50%);
+}
+.bb-content-and-sidebar .testimonial::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  background-image: url("/wp-content/themes/american-comfort-blocks/assets/svgs/ac-quote-left.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, 50%);
+}
+.bb-content-and-sidebar .cta-wrapper {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 3em 2em;
+}
+@media (max-width: 900px) {
+  .bb-content-and-sidebar .cta-wrapper {
+    padding: 3em 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .bb-content-and-sidebar .cta-wrapper {
+    padding: 2em 1em;
+  }
+}
+.bb-content-and-sidebar .cta-wrapper h2 + h2, .bb-content-and-sidebar .cta-wrapper h2 + p, .bb-content-and-sidebar .cta-wrapper h2 + .btns-wrapper, .bb-content-and-sidebar .cta-wrapper p + h2, .bb-content-and-sidebar .cta-wrapper p + p, .bb-content-and-sidebar .cta-wrapper p + .btns-wrapper, .bb-content-and-sidebar .cta-wrapper .btns-wrapper + h2, .bb-content-and-sidebar .cta-wrapper .btns-wrapper + p, .bb-content-and-sidebar .cta-wrapper .btns-wrapper + .btns-wrapper {
+  margin-top: 1.25rem;
+}
+.bb-content-and-sidebar .cta-wrapper::before {
+  content: "";
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  width: 100%;
+  height: 300%;
+  background-color: var(--wp--preset--color--custom-white);
+  transform: translate(-50%, -10em) rotate(180deg);
+}
+.bb-content-and-sidebar .coupons-wrapper {
+  padding: 3em 2em;
+  padding-left: 3em;
+}
+@media (max-width: 900px) {
+  .bb-content-and-sidebar .coupons-wrapper {
+    padding: 3em 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .bb-content-and-sidebar .coupons-wrapper {
+    padding: 2em 1em;
+  }
+}
+.bb-content-and-sidebar .coupons-wrapper h2 + h2, .bb-content-and-sidebar .coupons-wrapper h2 + p, .bb-content-and-sidebar .coupons-wrapper h2 + .btns-wrapper, .bb-content-and-sidebar .coupons-wrapper p + h2, .bb-content-and-sidebar .coupons-wrapper p + p, .bb-content-and-sidebar .coupons-wrapper p + .btns-wrapper, .bb-content-and-sidebar .coupons-wrapper .btns-wrapper + h2, .bb-content-and-sidebar .coupons-wrapper .btns-wrapper + p, .bb-content-and-sidebar .coupons-wrapper .btns-wrapper + .btns-wrapper {
+  margin-top: 1.25rem;
+}
+.bb-content-and-sidebar .bb-coupon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5em 3em;
+  padding-right: 1.5em;
+  width: 100%;
+  height: 100%;
+}
+.bb-content-and-sidebar #content-phone-callout {
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Roboto", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: var(--wp--preset--color--custom-primary-light);
+}
+.bb-content-and-sidebar #content-phone-callout a {
+  color: var(--wp--preset--color--custom-primary-light);
+}
+.bb-content-and-sidebar .ac-phone-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.bb-content-and-sidebar .ac-phone-icon::before {
+  content: "";
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  width: 1em;
+  height: 1em;
+  background-color: var(--wp--preset--color--custom-white);
+}
+.bb-content-and-sidebar .title-wrapper + .coupon {
+  margin-top: 2rem;
+}
+.bb-content-and-sidebar .coupon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  background-color: var(--wp--preset--color--custom-primary);
+  border: 4px dashed var(--wp--preset--color--custom-white);
+  border-radius: 1em;
+  max-width: 25em;
+  cursor: pointer;
+  transition: 300ms background-color ease;
+}
+.bb-content-and-sidebar .coupon:hover, .bb-content-and-sidebar .coupon:focus {
+  background-color: var(--wp--preset--color--custom-hover-blue);
+}
+@media (max-width: 800px) {
+  .bb-content-and-sidebar .coupon {
+    max-width: calc(100% - 4em);
+  }
+}
+@media (max-width: 500px) {
+  .bb-content-and-sidebar .coupon {
+    padding-right: 1em;
+  }
+}
+.bb-content-and-sidebar .coupon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: var(--wp--preset--color--custom-secondary);
+  transform: translate(-50%, -50%);
+}
+.bb-content-and-sidebar .coupon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  width: 4em;
+  height: 4em;
+  background-image: url("/wp-content/themes/american-comfort-blocks/assets/svgs/ac-piggy-bank.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+.bb-content-and-sidebar .coupon + .coupon {
+  margin-top: 1.5rem;
+}
+.bb-content-and-sidebar .details {
+  text-decoration: underline;
+}
+.bb-content-and-sidebar h3 + .bb-coupon-wrapper, .bb-content-and-sidebar p + .bb-coupon-wrapper, .bb-content-and-sidebar .bb-coupon-wrapper + .bb-coupon-wrapper {
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=content-sidebar.css.map */

@@ -1,0 +1,48 @@
+/* 1. Hide all slides by default */
+.bb-slider-editor .bb-slide-editor {
+	display: none;
+}
+
+/* 2. If a slide is selected, show it */
+.bb-slider-editor
+.block-editor-block-list__block.is-selected
+.bb-slide-editor,
+.bb-slider-editor
+.block-editor-block-list__block.has-child-selected
+.bb-slide-editor {
+	display: block;
+}
+
+/* 3. If NO slide is selected, show the first slide */
+.bb-slider-editor:not(
+	:has(
+		.block-editor-block-list__block.is-selected,
+		.block-editor-block-list__block.has-child-selected
+	)
+)
+.block-editor-block-list__block:first-of-type
+.bb-slide-editor {
+	display: block;
+}
+
+/* 1. Hide all mobile content by default */
+.mobile {
+	display: none;
+}
+
+/* 2. If a .mobile element is active OR has an active child, show it */
+.mobile:focus,
+.mobile:focus-within {
+	display: block;
+}
+
+/* 3. If NO .mobile element is active, show the first one */
+:not(
+	:has(
+		.mobile:focus,
+		.mobile:focus-within
+	)
+)
+.mobile:first-of-type {
+	display: block;
+}

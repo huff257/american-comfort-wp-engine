@@ -1,0 +1,288 @@
+.wp-block-buildingblocks-block-theme-navigation {
+    $box-right: 1.25em;
+    $box-size: 1.9em;
+
+    .mobile-nav-logo {
+        object-fit: contain;
+    }
+
+    /* Toggle Button */
+    .custom-navigation__toggle {
+        display: block;
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    /* Hamburger Icon Container */
+    .custom-navigation__toggle-icon {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        margin: auto;
+    }
+
+    /* The three lines - NO ANIMATION */
+    .custom-navigation__toggle-icon {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 36px;
+        margin: auto;
+        background: linear-gradient(var(--wp--preset--color--custom-white) 0 0) 0 0px / 30px 7px, linear-gradient(var(--wp--preset--color--custom-white) 0 0) 0 14px / 30px 6px, linear-gradient(var(--wp--preset--color--custom-white) 0 0) 0 27px / 30px 6px;
+        background-repeat: no-repeat;  
+    }
+
+    /* Top line */
+    .custom-navigation__toggle-icon::before {
+        content: '';
+        top: 0;
+    }
+
+    /* Middle line */
+    .custom-navigation__toggle-icon {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Bottom line */
+    .custom-navigation__toggle-icon::after {
+        content: '';
+        bottom: 0;
+    }
+
+    /* Navigation Container - Full Page Slide from Left */
+    .custom-navigation {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        list-style: none;
+        margin: 0;
+        padding: 60px 0 0 0;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        z-index: 9999;
+    }
+
+    /* Navigation Items - Full Width Rows */
+    .custom-navigation__item {
+        border-bottom: 1px solid #e0e0e0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .custom-navigation__link {
+        color: var(--wp--preset--color--custom-primary) !important;
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+
+    /* Parent Items with Children */
+    .custom-navigation__item.has-children {
+        .custom-navigation__link {
+            position: relative;
+        }
+    }
+
+
+    /* Background Box */
+    .custom-navigation__item.has-children > .custom-navigation__link .label::after {
+        content: "";
+        position: absolute;
+        right: $box-right;
+        top: 50%;
+        width: $box-size;
+        height: $box-size;
+        transform: translateY(-50%);
+        border-radius: 0.25em;
+        background-color: var(--wp--preset--color--custom-primary-light);
+    }
+
+    /* Down Caret (centered inside box) */
+    .custom-navigation__item.has-children > .custom-navigation__link::after {
+        border-left: 0.3125em solid transparent;
+        border-right: 0.3125em solid transparent;
+        border-top: 0.375em solid var(--wp--preset--color--custom-white);
+        content: "";
+        height: 0;
+        width: 0;
+        pointer-events: none;
+        position: absolute;
+        /* Position from right edge, accounting for box offset and centering */
+        right: calc($box-right + ($box-size / 2));
+        top: 50%;
+        transform: translate(50%, -50%);
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    /* Rotate caret when open */
+    .custom-navigation__item.has-children.is-open > .custom-navigation__link::after {
+        transform: translate(50%, -50%) rotate(180deg);
+    }
+
+    /* Make the entire link row clickable for accordion */
+    .custom-navigation__item.has-children > .custom-navigation__link {
+        cursor: pointer;
+        padding-right: 50px;
+    }
+
+    /* Submenus - Hidden by Default */
+    .custom-navigation__submenu {
+        background-color: #f5f5f5;
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Show submenu when parent is open */
+    .custom-navigation__item.is-open > .custom-navigation__submenu {
+        display: block;
+    }
+
+    /* First Level Submenu - Slight Indent */
+    .custom-navigation__submenu[data-level="1"] .custom-navigation__item {
+        padding-left: 20px;
+    }
+
+    /* Second Level Submenu - More Indent */
+    .custom-navigation__submenu[data-level="2"] .custom-navigation__item {
+        padding-left: 40px;
+    }
+
+    /* Third Level Submenu - Even More Indent */
+    .custom-navigation__submenu[data-level="3"] .custom-navigation__item {
+        padding-left: 60px;
+    }
+
+    /* Submenu Links */
+    .custom-navigation__submenu .custom-navigation__link {
+        font-size: 0.95em;
+        padding: 12px 20px;
+    }
+
+    /* Close Button */
+    .custom-navigation__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: none;
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        z-index: 10000;
+    }
+
+    /* X Icon */
+    .custom-navigation__close-icon {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: #333;
+        border-radius: 50%;
+    }
+
+    .custom-navigation__close-icon::before,
+    .custom-navigation__close-icon::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 70%;
+        background-color: var(--wp--preset--color--custom-white);
+    }
+
+    .custom-navigation__close-icon::before {
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+
+    .custom-navigation__close-icon::after {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+
+    .custom-navigation.is-open {
+        left: 0;
+
+        .custom-navigation__close {
+            display: block;
+        }
+    }
+
+    .ac-blue-btn,
+    .ac-red-btn {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        border-radius: 2rem;
+        font-weight: 800;
+        padding: 0.7em 1.75em;
+        margin: 15px 10px;
+        text-decoration: none;
+
+        &::before {
+            position: absolute;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+            width: 1.8em;
+            height: 1.8em;
+            background-color: var(--wp--preset--color--custom-primary-light);
+            transform: translate(1.25em, -50%);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+            transform: translate(0, 0);
+        }
+    }
+
+    .ac-blue-btn {
+        padding-left: 3.5em;
+        &::after {
+            background-color: var(--wp--preset--color--custom-primary);
+        }
+    }
+
+    .ac-red-btn {
+        &::after {
+            background-color: var(--wp--preset--color--custom-secondary);
+        }
+    }
+
+    .custom-navigation__button-item {
+        text-align: center;
+    }
+
+    .custom-navigation__item {
+        & + .custom-navigation__button-item {
+            margin-top: 2em;
+        }
+    }
+}

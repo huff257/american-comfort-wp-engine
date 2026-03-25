@@ -1,0 +1,118 @@
+.hero-section {
+  padding-top: var(--bb-section-padding-top);
+  padding-bottom: var(--bb-section-padding-bottom);
+  position: relative;
+  overflow: hidden;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 150%;
+  height: 200%;
+  background-color: var(--wp--preset--color--custom-primary-dark);
+  background-image: linear-gradient(135deg, var(--wp--preset--color--custom-primary-mix) 0, var(--wp--preset--color--custom-primary-dark) 34%, var(--wp--preset--color--custom-primary) 62%, var(--wp--preset--color--custom-primary-mix) 100%);
+  transform: translate(-50%, -50%);
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30em;
+  height: 30em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(45%, 50%);
+}
+@media (max-width: 500px) {
+  .hero-section::after {
+    width: 15em;
+    height: 15em;
+    transform: translate(53%, 44%);
+  }
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+  padding: 13em 3em;
+  padding-bottom: 11em;
+  padding-left: 9em;
+  color: var(--color-white);
+}
+@media (max-width: 1000px) {
+  .hero-section .container {
+    padding-left: 4em;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section .container {
+    padding: 10em 1.75em;
+    padding-bottom: 8em;
+  }
+}
+.hero-section.image-hero .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 2fr;
+  gap: 4em;
+  padding: 10em 3em;
+  padding-left: 9em;
+  padding-bottom: 0;
+}
+@media (max-width: 1000px) {
+  .hero-section.image-hero .container {
+    padding-left: 4em;
+  }
+}
+@media (max-width: 800px) {
+  .hero-section.image-hero .container {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section.image-hero .container {
+    padding: 11em 3em;
+    padding-left: 2em;
+    padding-bottom: 3em;
+  }
+}
+.hero-section.image-hero::after {
+  content: none;
+}
+.hero-section .bb-image-block {
+  max-width: 250px;
+}
+.hero-section .title {
+  max-width: 10em;
+  color: var(--color-white);
+}
+.hero-section .title strong,
+.hero-section .title b {
+  color: var(--color-secondary);
+}
+@media (max-width: 800px) {
+  .hero-section .title {
+    font-size: 3em;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section .title {
+    font-size: 2em;
+  }
+}
+.hero-section + .desktop-scrollers {
+  position: relative;
+  z-index: 2;
+  margin-top: -5em;
+}
+@media (max-width: 500px) {
+  .hero-section + .desktop-scrollers {
+    margin-top: -4em;
+  }
+}
+
+/*# sourceMappingURL=block-admin.css.map */

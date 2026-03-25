@@ -1,0 +1,9 @@
+{
+  "apiVersion": 3,
+  "name": "buildingblocks-block-theme/bb-copyright",
+  "title": "Copyright",
+  "category": "widgets",
+  "icon": "smiley",
+  "editorScript": "file:./editor.js",
+  "render": "file:./render.php"
+}

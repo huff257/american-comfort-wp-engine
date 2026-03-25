@@ -1,0 +1,326 @@
+.location-finder {
+  padding: 4em 0;
+}
+.location-finder.service-area-page {
+  padding-top: 0;
+}
+.location-finder .location-finder-title {
+  font-size: 2.5em;
+  line-height: 1;
+}
+@media (max-width: 1000px) {
+  .location-finder .location-finder-title {
+    font-size: 2em;
+  }
+}
+@media (max-width: 700px) {
+  .location-finder .location-finder-title {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .location-finder .location-finder-title {
+    font-size: 1.25em;
+  }
+}
+.location-finder .location-finder-title + .location-search {
+  margin-top: 1.5em;
+}
+.location-finder.service-area-page .location-finder-title {
+  font-size: 2em;
+}
+@media (max-width: 1000px) {
+  .location-finder.service-area-page .location-finder-title {
+    font-size: 2em;
+  }
+}
+@media (max-width: 700px) {
+  .location-finder.service-area-page .location-finder-title {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .location-finder.service-area-page .location-finder-title {
+    font-size: 1.25em;
+  }
+}
+.location-finder img + .location-finder-title, .location-finder figure + .location-finder-title {
+  margin-top: 1.1rem;
+}
+.location-finder .map {
+  width: 100%;
+  height: 100%;
+}
+.location-finder .map img {
+  width: 100%;
+  height: 100%;
+}
+.location-finder.service-area-page .map img {
+  aspect-ratio: 4/1;
+}
+.location-finder .image-column {
+  align-self: stretch;
+}
+@media (max-width: 1000px) {
+  .location-finder .image-column {
+    display: none;
+  }
+}
+.location-finder .content-column {
+  background-color: var(--wp--preset--color--custom-primary);
+  color: var(--wp--preset--color--custom-white);
+}
+.location-finder .columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+@media (max-width: 1000px) {
+  .location-finder .columns {
+    grid-template-columns: 1fr;
+  }
+}
+.location-finder.service-area-page .columns {
+  display: block;
+}
+.location-finder .content-column {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  padding: 3em 0;
+  align-self: stretch;
+  align-items: center;
+}
+.location-finder .content-column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 75em;
+  height: auto;
+  aspect-ratio: 1/1;
+  background-image: url(/wp-content/themes/american-comfort-blocks/assets/svgs/ac-burst.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translate(0, 0) rotate(90deg);
+}
+@media (max-width: 1000px) {
+  .location-finder .content-column::before {
+    transform: translate(0, -20%) rotate(180deg);
+  }
+}
+.location-finder.service-area-page .content-column {
+  padding: 2em 1em;
+}
+@media (max-width: 1250px) {
+  .location-finder.service-area-page .content-column::before {
+    transform: translate(0, 0) rotate(180deg);
+  }
+}
+.location-finder.service-area-page .content-wrapper {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.location-finder .content-wrapper {
+  padding-left: 4em;
+  max-width: calc(700px - 4em);
+}
+@media screen and (max-width: 1450px) {
+  .location-finder .content-wrapper {
+    max-width: 100%;
+    padding-right: 3em;
+  }
+}
+@media (max-width: 1000px) {
+  .location-finder .content-wrapper {
+    padding: 0 3em;
+  }
+}
+@media (max-width: 850px) {
+  .location-finder .content-wrapper {
+    padding: 0 1.5em;
+  }
+}
+@media (max-width: 500px) {
+  .location-finder .content-wrapper {
+    padding: 0 1em;
+  }
+}
+.location-finder.service-area-page .content-wrapper {
+  padding: 0;
+}
+.location-finder .location-search {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 0.5em;
+  padding: 0.5em;
+  padding-left: 1.75em;
+  background-color: var(--wp--preset--color--custom-white);
+  border-radius: 2.5em;
+}
+@media (max-width: 1000px) {
+  .location-finder .location-search {
+    background-color: transparent;
+    flex-direction: column;
+  }
+}
+.location-finder .location-search .inside-wrapper {
+  max-width: 5em;
+}
+.location-finder .location-search .wp-block-search__inside-wrapper {
+  border: none;
+}
+@media (max-width: 1000px) {
+  .location-finder .location-search .wp-block-search__inside-wrapper {
+    background-color: transparent;
+  }
+}
+.location-finder .location-search .wp-block-search__label {
+  flex: 0 0 6em;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--wp--preset--color--custom-primary);
+}
+@media (max-width: 1000px) {
+  .location-finder .location-search .wp-block-search__label {
+    flex: 0 0 auto;
+    color: var(--wp--preset--color--custom-white);
+    max-width: calc(320px - 4em);
+  }
+}
+.location-finder .location-search .wp-block-search__input {
+  flex-grow: 0 !important;
+  border: solid 1px var(--wp--preset--color--custom-hover-blue);
+  border-radius: 2em;
+  padding-right: 6em;
+  padding-left: 0.5em;
+  width: 12em;
+  display: block;
+}
+.location-finder .location-search .wp-block-search__button {
+  margin-left: -6em;
+  border-radius: 2em;
+  background-color: var(--wp--preset--color--custom-primary-light);
+  font-weight: 700;
+}
+@media (max-width: 1250px) {
+  .location-finder.service-area-page .location-search {
+    flex-direction: column;
+    padding-left: 0.5em;
+    background-color: transparent;
+  }
+}
+@media (max-width: 1250px) {
+  .location-finder.service-area-page .wp-block-search__inside-wrapper {
+    background-color: transparent;
+  }
+}
+@media (max-width: 1250px) {
+  .location-finder.service-area-page .wp-block-search__label {
+    flex: 0 0 auto;
+    color: var(--wp--preset--color--custom-white);
+  }
+}
+.location-finder.service-area-page .content-wrapper {
+  margin: 0 auto;
+}
+.location-finder .location-list {
+  display: flex;
+  gap: 0.25em 2em;
+  padding: 2em 0.5em;
+  padding-left: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--wp--preset--color--custom-white);
+  font-weight: 700;
+}
+.location-finder .location-list li {
+  list-style-type: disc;
+}
+.location-finder .location-list li a {
+  color: var(--wp--preset--color--custom-white);
+  text-decoration: underline;
+}
+.location-finder.service-area-page .location-list {
+  padding: 2em 2em;
+  padding-left: 2em;
+}
+
+#bb-location-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+#bb-location-modal h2 {
+  color: var(--wp--preset--color--custom-primary);
+}
+#bb-location-modal .bb-location-content {
+  background: #fff;
+  padding: 2em 1em;
+  max-width: 800px;
+  width: calc(100% - 2em);
+  height: 80%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  overflow: scroll;
+  text-align: center;
+  font-size: 1.1em;
+}
+#bb-location-modal .bb-location-content .bb-location-close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  line-height: 1;
+  cursor: pointer;
+}
+#bb-location-modal .bb-location-content .ac-phone-coupon-icon a {
+  position: relative;
+  padding-left: 3.5em;
+}
+#bb-location-modal .bb-location-content .ac-phone-coupon-icon a::before {
+  content: "";
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 0;
+  width: 1.8em;
+  height: 1.8em;
+  background-color: var(--wp--preset--color--custom-white);
+  display: block;
+  mask-image: url("./ac-phone-icon.svg");
+  transform: translate(1.25em, -50%);
+}
+#bb-location-modal p + .ac-btns-wrapper, #bb-location-modal h2 + .ac-btns-wrapper {
+  margin-top: 1rem;
+}
+#bb-location-modal .bb-location-finder-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
+#bb-location-modal .modal-buttons-wrapper {
+  margin-top: 2em;
+}
+#bb-location-modal .ac-btn {
+  padding: 1em;
+}
+
+/*# sourceMappingURL=location-finder.css.map */

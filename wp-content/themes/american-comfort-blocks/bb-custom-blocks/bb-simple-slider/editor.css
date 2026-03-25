@@ -1,0 +1,26 @@
+/* 1. Hide all slides by default */
+.bb-slider-editor .bb-slide-editor {
+	display: none;
+}
+
+/* 2. If a slide is selected, show it */
+.bb-slider-editor
+.block-editor-block-list__block.is-selected
+.bb-slide-editor,
+.bb-slider-editor
+.block-editor-block-list__block.has-child-selected
+.bb-slide-editor {
+	display: block;
+}
+
+/* 3. If NO slide is selected, show the first slide */
+.bb-slider-editor:not(
+	:has(
+		.block-editor-block-list__block.is-selected,
+		.block-editor-block-list__block.has-child-selected
+	)
+)
+.block-editor-block-list__block:first-of-type
+.bb-slide-editor {
+	display: block;
+}

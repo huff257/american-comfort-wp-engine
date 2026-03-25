@@ -1,0 +1,123 @@
+.dual-coupons {
+  padding: 4em 0;
+}
+.dual-coupons .wp-block-cover {
+  border-radius: 2em;
+}
+@media (max-width: 500px) {
+  .dual-coupons .wp-block-cover {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.dual-coupons h3 + .bb-coupon-wrapper, .dual-coupons p + .bb-coupon-wrapper, .dual-coupons .bb-coupon-wrapper + .bb-coupon-wrapper {
+  margin-top: 1rem;
+}
+.dual-coupons .coupon-section-title {
+  font-size: 2.5em;
+  padding: 0.5em 0;
+  padding-top: 0;
+  line-height: 1;
+  color: var(--wp--preset--color--custom-white);
+}
+@media (max-width: 1000px) {
+  .dual-coupons .coupon-section-title {
+    font-size: 2em;
+  }
+}
+@media (max-width: 800px) {
+  .dual-coupons .coupon-columns {
+    gap: 3em;
+  }
+}
+.dual-coupons .coupon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  background-color: var(--wp--preset--color--custom-primary);
+  border: 4px dashed var(--wp--preset--color--custom-white);
+  border-radius: 1em;
+  max-width: 25em;
+  cursor: pointer;
+  transition: 300ms background-color ease;
+}
+.dual-coupons .coupon:hover, .dual-coupons .coupon:focus {
+  background-color: var(--wp--preset--color--custom-hover-blue);
+}
+@media (max-width: 800px) {
+  .dual-coupons .coupon {
+    max-width: calc(100% - 4em);
+  }
+}
+@media (max-width: 500px) {
+  .dual-coupons .coupon {
+    max-width: calc(100% - 3em);
+  }
+}
+.dual-coupons .coupon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: var(--wp--preset--color--custom-hover-red);
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 800px) {
+  .dual-coupons .coupon::before {
+    left: 50%;
+    top: 0;
+  }
+}
+.dual-coupons .coupon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  width: 4em;
+  height: 4em;
+  background-image: url("/wp-content/themes/american-comfort-blocks/assets/svgs/ac-piggy-bank.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 800px) {
+  .dual-coupons .coupon::after {
+    left: 50%;
+    top: 0;
+  }
+}
+.dual-coupons .bb-coupon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 3em;
+}
+@media (max-width: 800px) {
+  .dual-coupons .bb-coupon-wrapper {
+    padding: 1.5em 1em;
+    padding-top: 3em;
+  }
+}
+.dual-coupons .coupon-content {
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+.dual-coupons .coupon-title {
+  font-size: 1.29em;
+}
+.dual-coupons .details {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=dual-coupons.css.map */

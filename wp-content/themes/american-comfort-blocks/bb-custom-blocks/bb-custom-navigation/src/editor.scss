@@ -1,0 +1,210 @@
+/* Toggle Button */
+.custom-navigation__toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+/* Hamburger Icon Container */
+.custom-navigation__toggle-icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    margin: auto;
+}
+
+/* The three lines - NO ANIMATION */
+.custom-navigation__toggle-icon::before,
+.custom-navigation__toggle-icon::after,
+.custom-navigation__toggle-icon {
+    position: absolute;
+    width: 30px;
+    height: 6px;
+    background-color: #333;
+}
+
+/* Top line */
+.custom-navigation__toggle-icon::before {
+    content: '';
+    top: 0;
+}
+
+/* Middle line */
+.custom-navigation__toggle-icon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Bottom line */
+.custom-navigation__toggle-icon::after {
+    content: '';
+    bottom: 0;
+}
+
+/* Navigation Container - Full Page Slide from Left */
+nav .custom-navigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 60px 0 0 0;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 9999;
+}
+
+nav .custom-navigation.is-open {
+    left: 0;
+}
+
+/* Navigation Items - Full Width Rows */
+.custom-navigation__item {
+    border-bottom: 1px solid #e0e0e0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navigation__link {
+    color: #333;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+/* Parent Items with Children */
+.custom-navigation__item.has-children {
+    position: relative;
+}
+
+/* Submenu Toggle Button (Down Caret) */
+.custom-navigation__item.has-children > .custom-navigation__link::after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #333;
+    content: "";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    width: 0;
+}
+
+/* Rotate caret when open */
+.custom-navigation__item.has-children.is-open > .custom-navigation__link::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Make the entire link row clickable for accordion */
+.custom-navigation__item.has-children > .custom-navigation__link {
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+/* Submenus - Hidden by Default */
+.custom-navigation__submenu {
+    background-color: #f5f5f5;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Show submenu when parent is open */
+.custom-navigation__item.is-open > .custom-navigation__submenu {
+    display: block;
+}
+
+/* First Level Submenu - Slight Indent */
+.custom-navigation__submenu[data-level="1"] .custom-navigation__item {
+    padding-left: 20px;
+}
+
+/* Second Level Submenu - More Indent */
+.custom-navigation__submenu[data-level="2"] .custom-navigation__item {
+    padding-left: 40px;
+}
+
+/* Third Level Submenu - Even More Indent */
+.custom-navigation__submenu[data-level="3"] .custom-navigation__item {
+    padding-left: 60px;
+}
+
+/* Submenu Links */
+.custom-navigation__submenu .custom-navigation__link {
+    font-size: 0.95em;
+    padding: 12px 20px;
+}
+
+/* Nested parent items also get carets */
+.custom-navigation__submenu .custom-navigation__item.has-children > .custom-navigation__link::after {
+    border-top-color: #666;
+    right: 20px;
+}
+
+/* Editor styles for custom navigation block */
+
+/* Toggle Button */
+.custom-navigation__toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Hamburger Icon Container */
+.custom-navigation__toggle-icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    margin: auto;
+}
+
+/* The three lines - NO ANIMATION */
+.custom-navigation__toggle-icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 36px;
+    margin: auto;
+    background: linear-gradient(var(--wp--preset--color--custom-white) 0 0) 0 0px / 30px 7px, linear-gradient(var(--wp--preset--color--custom-white) 0 0) 0 14px / 30px 6px, linear-gradient(var(--wp--preset--color--custom-white) 0 0) 0 27px / 30px 6px;
+    background-repeat: no-repeat;  
+}
+
+/* Top line */
+.custom-navigation__toggle-icon::before {
+    content: '';
+    top: 0;
+}
+
+/* Middle line */
+.custom-navigation__toggle-icon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Bottom line */
+.custom-navigation__toggle-icon::after {
+    content: '';
+    bottom: 0;
+}

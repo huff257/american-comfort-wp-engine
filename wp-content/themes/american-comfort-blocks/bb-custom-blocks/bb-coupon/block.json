@@ -1,0 +1,15 @@
+{
+  "apiVersion": 3,
+  "name": "building-blocks-theme/bb-coupon",
+  "title": "Coupon Wrapper",
+  "category": "layout",
+  "icon": "tickets-alt",
+  "description": "Wrap content and trigger a coupon popup",
+  "supports": {
+    "html": true
+  },
+  "editorScript": "file:./build/index.js",
+  "viewScript": "file:./build/view.js",
+  "editorStyle": "file:./build/index-rtl.css",
+  "style": "file:./build/style-index.css"
+}

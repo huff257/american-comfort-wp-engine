@@ -1,0 +1,170 @@
+.bb-footer {
+    position: relative;
+    padding: 3em 0;
+    background-color: var(--wp--preset--color--custom-dark-black);
+    color: var(--wp--preset--color--custom-white);
+
+    @media (max-width: 800px) {
+        padding-bottom: 6em;
+    }
+
+    .footer-logo {
+        & + .btn-wrapper {
+            margin-top: 1.5em;
+        }
+    }
+
+    .middle-column {
+        p {
+            & + p {
+                margin-top: 2em;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .bb-social {
+        background-color: var(--wp--preset--color--custom-primary-light);
+    }
+
+    .bb-socials {
+        & + p {
+            margin-top: 2em;
+        }
+    }
+
+    .ac-phone-icon {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        font-size: 2em;
+
+        @media (max-width: 1100px) {
+            font-size: 1.5em;
+        }
+
+        &::before {
+            content: '';
+            mask-size: contain;
+            mask-position: center;
+            mask-repeat: no-repeat;
+            position: relative;
+            z-index: 0;
+            width: 1em;
+            height: 1em;
+            background-color: var(--wp--preset--color--custom-primary-light);
+        }
+    }
+
+    .financing {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .bottom-footer-column {
+        padding: 2em 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .links-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em 1em;
+
+        li {
+            position: relative;
+            font-weight: 700;
+
+            &:first-of-type {
+                &::before {
+                    content: none;
+                }
+            }
+
+            @media (min-width: 901px) {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 2px;
+                    height: 90%;
+                    background-color: var(--wp--preset--color--custom-white);
+                    transform: translate(calc(-0.5em - 1px), -50%);
+                }   
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .newsletter-form {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        .wp-block-jetpack-field-email {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5em;
+
+            label {
+                flex: 1 0 300px;
+                max-width: 100%;
+                text-align: center;
+                font-size: 1.5em;
+                line-height: 1.1;
+                font-weight: 700;
+                color: var(--wp--preset--color--custom-white);
+                margin-bottom: 0;
+            }
+
+            .newsletter-input {
+                flex: 1 0 300px;
+                max-width: 100%;
+                padding-top: 0.67em;
+                padding-right: 1.33em;
+                padding-bottom: 0.67em;
+                padding-left: 1.33em;
+                border-radius: 2rem;
+                font-size: 1em;
+                background-color: var(--wp--preset--color--custom-white);
+            }
+        }
+
+        .wp-block-button {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            transform: translate(0em, calc(-100% - 1px));
+
+            button {
+                padding-top: 0.67em;
+                padding-right: 1.33em;
+                padding-bottom: 0.67em;
+                padding-left: 1.33em;
+                background-color: var(--wp--preset--color--custom-primary-light);
+            }
+        }
+
+        .contact-form__input-error {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "settings": {
+    "typography": {
+      "customLineHeight": true,
+      "lineHeight": {
+        "default": "1.5",
+        "small": "1.25",
+        "large": "1.75",
+        "extraLarge": "2"
+      }
+    },
+    "layout": {
+      "allowJustification": true
+    },
+    "spacing": {
+      "customPadding": true,
+      "customMargin": true,
+      "units": ["px", "em", "%", "rem"]
+    },
+    "border": {
+      "color": true
+    },
+    "blocks": {
+      "core/group": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        }
+      },
+      "core/columns": {
+        "spacing": {
+          "blockGap": true,
+          "padding": true,
+          "margin": true
+        },
+        "layout": {
+          "allowJustification": true
+        }
+      },
+      "core/column": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        }
+      },
+      "core/cover": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "layout": {
+          "allowJustification": true
+        }
+      },
+      "core/row": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        }
+      }
+    }
+  }
+}

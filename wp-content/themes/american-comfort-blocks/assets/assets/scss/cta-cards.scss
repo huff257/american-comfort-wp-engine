@@ -1,0 +1,64 @@
+.bb-cta-cards {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 0;
+        width: 110%;
+        height: 110%;
+        background-color: var(--wp--preset--color--custom-primary-dark);
+        background-image:linear-gradient(135deg, var(--wp--preset--color--custom-primary) 64%, var(--wp--preset--color--custom-mix) 100%);
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 700px) {
+            background-image:linear-gradient(135deg, var(--wp--preset--color--custom-primary) 80%, var(--wp--preset--color--custom-mix) 100%);
+        }
+    }
+
+    .cards-wrapper {
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+
+    .bb-card {
+        position: relative;
+
+        @media screen and (max-width: 400px) {
+            max-width: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 1em;
+            left: 50%;
+            width: 3em;
+            height: 3em;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: translate(-50%, 0);
+            background-position: center;
+        }
+    }
+
+    .bb-container {
+        @media (max-width: 800px) {
+            padding-top: 2em !important;
+            padding-bottom: 2em !important;
+        }
+    }
+}
+
+footer {
+    position: relative;
+    background-color: var(--wp--preset--color--custom-primary-dark);
+
+    .bb-copyright {
+        padding: 0.25em 0;
+        text-align: center;
+    }
+}

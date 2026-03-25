@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "building-blocks-theme/tabs",
+  "title": "Tabs",
+  "category": "layout",
+  "icon": "table-col-after",
+  "description": "A tabbed interface that displays different groups of content",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "editorScript": "file:./build/index.js",
+  "viewScript": "file:./build/view.js",
+  "editorStyle": "file:./build/index-rtl.css",
+  "style": "file:./build/style-index.css"
+}

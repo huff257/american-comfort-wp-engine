@@ -1,0 +1,26 @@
+{
+  "apiVersion": 3,
+  "name": "buildingblocks-block-theme/mockup",
+  "title": "Mockup",
+  "category": "media",
+  "icon": "format-image",
+  "supports": {
+    "align": true,
+    "className": true
+  },
+  "attributes": {
+    "deviceImageId": {
+        "type": "number"
+    },
+    "parallaxImageId": {
+        "type": "number"
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "medium"
+    }
+},
+
+  "editorScript": "file:./editor.js",
+  "render": "file:./render.php"
+}

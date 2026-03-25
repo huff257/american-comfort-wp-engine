@@ -1,0 +1,1 @@
+console.log('advanced block callback did something!');
