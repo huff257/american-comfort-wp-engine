@@ -8,6 +8,23 @@
 *.swp
 Thumbs.db
 
+# Node / NPM (global ignore for all folders)
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Env files
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Optional lockfiles (uncomment if you don't want them committed)
+# **/package-lock.json
+# **/yarn.lock
+# **/pnpm-lock.yaml
+
 # WP Engine Specific
 .smushit-status
 _wpeprivate

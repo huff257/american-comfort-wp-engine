@@ -1,0 +1,59 @@
+{
+  "apiVersion": 3,
+  "name": "building-blocks-theme/bb-video",
+  "title": "Hero Video",
+  "category": "media",
+  "icon": "media",
+  "description": "Performance-optimized hero video block with mobile image fallback.",
+  "supports": {
+    "html": false,
+    "align": [
+      "full"
+    ],
+    "anchor": true
+  },
+  "attributes": {
+    "videoUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "videoId": {
+      "type": "number"
+    },
+    "posterId": {
+      "type": "number"
+    },
+    "posterUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "posterAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "posterWidth": {
+      "type": "number"
+    },
+    "posterHeight": {
+      "type": "number"
+    },
+    "mobileImageId": {
+      "type": "number"
+    },
+    "mobileImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mobileImageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "useMobileFallback": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "custom-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

@@ -21,6 +21,7 @@ function bb_register_blocks() {
     register_block_type($block_path . '/bb-tabbable');
     register_block_type($block_path . '/bb-location-search-form');
     register_block_type($block_path . '/bb-coupon');
+    register_block_type($block_path . '/bb-video');
 }
 
 /**
