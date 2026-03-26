@@ -53,7 +53,5 @@
       "default": false
     }
   },
-  "textdomain": "custom-blocks",
-  "editorScript": "file:./index.js",
-  "style": "file:./style.css"
+  "editorScript": "file:./build/index.js"
 }
