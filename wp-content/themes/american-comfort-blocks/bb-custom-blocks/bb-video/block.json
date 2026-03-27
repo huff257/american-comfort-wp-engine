@@ -4,7 +4,7 @@
   "title": "Hero Video",
   "category": "media",
   "icon": "media",
-  "description": "Performance-optimized hero video block with mobile image fallback.",
+  "description": "Performance-optimized hero video block with responsive poster image and optional mobile video fallback.",
   "supports": {
     "html": false,
     "align": [
@@ -37,16 +37,13 @@
     "posterHeight": {
       "type": "number"
     },
-    "mobileImageId": {
-      "type": "number"
-    },
-    "mobileImageUrl": {
+    "posterSrcSet": {
       "type": "string",
       "default": ""
     },
-    "mobileImageAlt": {
+    "posterSizes": {
       "type": "string",
-      "default": ""
+      "default": "(max-width: 768px) 100vw, 100vw"
     },
     "useMobileFallback": {
       "type": "boolean",
